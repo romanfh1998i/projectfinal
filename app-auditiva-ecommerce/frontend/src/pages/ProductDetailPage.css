@@ -1,0 +1,177 @@
+.product-detail-page {
+  padding: 60px 0;
+}
+
+.breadcrumb {
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.breadcrumb a {
+  color: var(--primary-color);
+}
+
+.product-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.product-image img {
+  width: 100%;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.product-info h1 {
+  font-size: 2.2rem;
+  color: var(--dark-color);
+  margin-bottom: 15px;
+}
+
+.product-description {
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.product-price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+}
+
+.product-actions {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.quantity-control label {
+  margin-right: 10px;
+  font-weight: 500;
+}
+
+.quantity-control input {
+  width: 60px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius);
+  text-align: center;
+}
+
+.product-details-tabs {
+  margin-bottom: 60px;
+}
+
+.tab-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.specifications h2,
+.features h2 {
+  margin-bottom: 20px;
+  color: var(--dark-color);
+}
+
+.specs-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.specs-table tr {
+  border-bottom: 1px solid #eee;
+}
+
+.specs-table th,
+.specs-table td {
+  padding: 12px 0;
+  text-align: left;
+}
+
+.specs-table th {
+  width: 40%;
+  color: #666;
+  font-weight: 500;
+}
+
+.features-list {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.features-list li {
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.related-products h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.product-not-found {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.product-not-found h2 {
+  font-size: 2rem;
+  color: var(--dark-color);
+  margin-bottom: 15px;
+}
+
+.product-not-found p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.product-not-found .btn {
+  display: inline-flex;
+  align-items: center;
+}
+
+.product-not-found .btn svg {
+  margin-right: 8px;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .product-detail {
+    grid-template-columns: 1fr;
+  }
+  
+  .tab-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-info h1 {
+    font-size: 1.8rem;
+  }
+  
+  .product-price {
+    font-size: 1.6rem;
+  }
+  
+  .product-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .quantity-control {
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+}
