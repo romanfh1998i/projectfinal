@@ -7,6 +7,7 @@ import ProductsPage from './pages/ProductsPage';
 import ProductDetailPage from './pages/ProductDetailPage';
 import CartPage from './pages/CartPage';
 import CheckoutPage from './pages/CheckoutPage';
+import VisualizerPage from './pages/VisualizerPage';
 import { CartProvider } from './context/CartContext';
 import './App.css';
 
@@ -22,6 +23,7 @@ const App: React.FC = () => {
             <Route path="/productos/:id" element={<ProductDetailPage />} />
             <Route path="/carrito" element={<CartPage />} />
             <Route path="/checkout" element={<CheckoutPage />} />
+            <Route path="/visualizador" element={<VisualizerPage />} />
           </Routes>
         </main>
         <Footer />
